@@ -33,6 +33,10 @@ func (r *Remote) ChannelUp() {
 	r.device.SetChannel(c + 1)
 }
 
+func (r *Remote) SetDevice(device Device) {
+	r.device = device
+}
+
 type AdvancedRemote struct {
 	Remote
 }
