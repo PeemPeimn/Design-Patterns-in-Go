@@ -20,4 +20,6 @@ jobs:
       with:
         go-version: '1.21.x'
     - name: Test
-      run: go test -v ./...
+      run: | 
+        go mod download
+        go test -v ./... -cover
