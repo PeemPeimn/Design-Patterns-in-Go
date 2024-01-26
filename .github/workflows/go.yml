@@ -22,4 +22,5 @@ jobs:
     - name: Test
       run: | 
         go mod download
+        go mod tidy
         go test -v ./... -cover
